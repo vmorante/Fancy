@@ -1,0 +1,8 @@
+.container #producto {
+    width: 50vw;
+}
+
+#producto img {
+    width: 700px;
+    height: 700px;
+}
