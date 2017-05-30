@@ -1,8 +1,8 @@
-.container #producto {
-    width: 50vw;
+#producto img {
+    width: 400px;
+    height: 400px;
 }
 
-#producto img {
-    width: 700px;
-    height: 700px;
+#producto {
+    margin-top: 56px;
 }
