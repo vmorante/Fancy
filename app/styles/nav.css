@@ -1,0 +1,21 @@
+.navbar-inverse {
+    border-radius: 0;
+    background-color: white;
+}
+
+#busqueda {
+    margin-top: 5px;
+}
+
+.input-group {
+    width: 20%
+}
+
+#fancy {
+    margin-left: 250px;
+    margin-top: 5px;
+}
+
+#carro {
+    margin-right: 5px;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "funcy",
+    "version": "0.0.1",
+
+    "authors": [
+        "Veronica"
+    ],
+    "description": "An example proyect for learning purposes",
+    "main": "",
+    "keywords": [
+        "babel",
+        "keepcoding",
+        "learning"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap-sass": "^3.3.7"
+    }
+}
