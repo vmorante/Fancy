@@ -8,7 +8,7 @@
     }).then(function(responses) {
         //console.log(responses);
         var html = responses.reduce(function(total, response, index, list) {
-            console.log(arguments);
+
             return total + '<div class="panel-body"> <img src=" ' +
                 response.images.lg[0] + ' ">  </div> ' +
                 ' <div class="panel-footer"> ' +

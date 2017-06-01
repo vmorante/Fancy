@@ -2,7 +2,8 @@
 (function() {
 
     var service = {
-        root: '../resources/mocks/list',
+        root: '../resources/mocks/list.json',
+        root2: '../resources/mocks/item.json',
         getProducto: getProducto,
         getProductos: getProductos,
         // createPhoto: createPhoto,
@@ -10,11 +11,11 @@
         // deletePhoto: deletePhoto
     };
 
-    function getProducto(productoId) {
+    function getProducto() {
         return $.ajax({
             type: 'GET',
             dataType: 'json',
-            url: service.root + productoId
+            url: service.root2 + '?callback=parseJSON'
         });
     }
 
