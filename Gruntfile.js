@@ -57,7 +57,7 @@ module.exports = function(grunt) {
             },
             html: {
                 files: ['<%= appConfig.app %>/**/*.html'],
-                tasks: ['includeSource:server', 'processhtml:server']
+                tasks: ['includeSource:server']
             },
             livereload: {
                 options: {
@@ -67,9 +67,8 @@ module.exports = function(grunt) {
                     '.tmp/*.html',
                     '<%= appConfig.app %>/**/*.html',
                     '.tmp/styles/{,*/}*.css',
-                    '<%= appConfig.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-
-
+                    '<%= appConfig.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    '<%= appConfig.app %>/resources/'
                 ]
             }
         },
@@ -77,7 +76,9 @@ module.exports = function(grunt) {
         wiredep: {
             app: {
                 src: [
-                    '<%= appConfig.app %>/index.html'
+                    '<%= appConfig.app %>/index.html',
+                    '<%= appConfig.app %>/ListadoProductos.html'
+
                 ],
                 ignorePath: /\.\.\//
             },
@@ -93,13 +94,14 @@ module.exports = function(grunt) {
             },
             server: {
                 files: {
-                    './index.html': '<%= appConfig.app %>/index.html',
-                    './ListadoProductos.html': '<%= appConfig.app %>/ListadoProductos.html'
+                    '.tmp/index.html': '<%= appConfig.app %>/index.html',
+                    '.tmp/ListadoProductos.html': '<%= appConfig.app %>/ListadoProductos.html'
                 }
             },
             dist: {
                 files: {
-                    '<%= appConfig.dist %>/index.html': '<%= appConfig.app %>/index.html'
+                    '<%= appConfig.dist %>/index.html': '<%= appConfig.app %>/index.html',
+                    '<%= appConfig.dist %>/ListadoProductos.html': '<%= appConfig.app %>/ListadoProductos.html'
                 }
             }
         },
@@ -168,6 +170,7 @@ module.exports = function(grunt) {
                     dest: '<%= appConfig.dist %>',
                     src: [
                         'assets/**/*',
+                        'resources/**/*'
                     ]
                 }]
             }
@@ -178,7 +181,7 @@ module.exports = function(grunt) {
                 src: [
                     '<%= appConfig.dist %>/**/*.js',
                     '<%= appConfig.dist %>/styles/**/*.css',
-                    '<%= appConfig.dist %>/assets/**/*.{png,jpg,jpeg,gif,webp,svg}',
+                    '<%= appConfig.dist %>/resources/',
                     '<%= appConfig.dist %>/assets/fonts/*'
                 ]
             }

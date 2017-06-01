@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/nav-index.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="styles/nav-index.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/geo.css">
     <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="styles/unirse.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/main.css">-->
+
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- build:css(.tmp) /styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
 </head>
 
 <body>
+    <div class="cookies">
+        <p>cookies
+            <button class="btn btn-primary">OK</button>
+        </p>
+    </div>
 
     <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -267,7 +280,20 @@
 
 
     </footer>
-    <script src="script/localizacion.js"></script>
+    
+    <!-- build:js(.) /scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <!-- build:js({.,.tmp,app}) scripts/scripts.js -->
+    <!-- include: "type": "js", "files": ["scripts/**/*.js"], "baseUrl": "/" -->
+    <!-- endbuild -->
+
+   
 </body>
 
 </html>

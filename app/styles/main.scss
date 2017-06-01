@@ -1,0 +1,24 @@
+@import 'normalize';
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import 'variables';
+@import 'actividades';
+@import 'app';
+@import 'footer';
+@import 'geo';
+@import 'home';
+@import 'info';
+@import 'login';
+@import 'modal';
+@import 'nav-index';
+@import 'nav';
+@import 'producto';
+@import 'trendings';
+@import 'unirse';
+@import 'cookies';
+h2 {
+    color: #383d48;
+    font-size: 55px;
+    font-weight: 400;
+}
