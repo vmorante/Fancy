@@ -8,22 +8,50 @@
     }).then(function(responses) {
 
         var html = responses.reduce(function(total, response, index, list) {
-            //console.log(arguments)
-            console.log(list)
 
-
-
-            return '<div class="panel-body"> <picture>' +
-                ' <source srcset="' + response.images.md[0] + '" media="(max-width: 480px)"> ' +
-                ' <source srcset=" ' + response.images.xs[0] + '" media="(min-width: 481px) and (max-width: 960px)">' +
-                ' <img src=" ' + response.images.lg[0] + ' ">  </div> </picture>' +
+            return '<div  class="panel panel-default">' +
+                '<div class="panel-body"> <picture>' +
+                ' <source srcset="' + responses[1].images.md[0] + '" media="(max-width: 480px)"> ' +
+                ' <source srcset=" ' + responses[1].images.xs[0] + '" media="(min-width: 481px) and (max-width: 960px)">' +
+                ' <img  class="imagen1" src=" ' + responses[1].images.lg[0] + ' ">  </div> </picture>' +
                 ' <div class="panel-footer"> ' +
-                ' <a href="#myModal" data-toggle="modal" data-target="#myModal">"' + response.name + '"</a>' +
-                ' <button type="button" class="btn btn-info ">Info</button>' +
+                ' <a href="#myModal" data-toggle="modal" data-target="#myModal">' + responses[1].name + '</a>' +
+                ' <button type="button" class="btn btn-info ">' + responses[1].price + '$</button>' +
                 '<button type="button" class="btn btn-default btn-lg ">' +
-                ' <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>"' + response.likes +
-                ' " </button> ' +
-                '</div>';
+                ' <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>' + responses[1].likes +
+                '  </button> ' +
+                '</div> </div>' +
+                '<div class="row">' +
+                '<div class="col-lg-6 col-md-6 col-xs-12">' +
+                '<div  class="panel panel-default">' +
+                '<div class="panel-body"> <picture>' +
+                ' <source srcset="' + responses[2].images.md[0] + '" media="(max-width: 480px)"> ' +
+                ' <source srcset=" ' + responses[2].images.xs[0] + '" media="(min-width: 481px) and (max-width: 960px)">' +
+                ' <img  class="imagen" src=" ' + responses[2].images.lg[0] + ' ">  </div> </picture>' +
+                ' <div class="panel-footer"> ' +
+                ' <a href="#myModal" data-toggle="modal" data-target="#myModal">' + responses[1].name + '</a>' +
+                ' <button type="button" class="btn btn-info ">' + responses[2].price + '$</button>' +
+                '<button type="button" class="btn btn-default btn-lg ">' +
+                ' <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>' + responses[1].likes +
+                '  </button> ' +
+                '</div> </div> </div>' +
+                '<div class="col-lg-6 col-md-6 col-xs-12">' +
+                '<div  class="panel panel-default">' +
+                '<div class="panel-body"> <picture>' +
+                ' <source srcset="' + responses[3].images.md[0] + '" media="(max-width: 480px)"> ' +
+                ' <source srcset=" ' + responses[3].images.xs[0] + '" media="(min-width: 481px) and (max-width: 960px)">' +
+                ' <img  class="imagen" src=" ' + responses[3].images.lg[0] + ' ">  </div> </picture>' +
+                ' <div class="panel-footer"> ' +
+                ' <a href="#myModal" data-toggle="modal" data-target="#myModal">' + responses[3].name + '</a>' +
+                ' <button type="button" class="btn btn-info ">' + responses[3].price + '$</button>' +
+                '<button type="button" class="btn btn-default btn-lg ">' +
+                ' <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>' + responses[3].likes +
+                '  </button> ' +
+                '</div> </div> </div>'
+
+
+
+
         }, '');
         $('#producto').append(html);
         // console.log(html);

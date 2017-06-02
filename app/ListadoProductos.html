@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="resources/favicon.ico">
     <title>Fancy</title>
     <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/nav.css">
@@ -19,7 +20,7 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body id="lista">
     <div class="cookies">
         <p>cookies
             <button class="btn btn-primary">OK</button>
@@ -30,13 +31,13 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
-                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href=""><img src="" alt=""></a>-->
+                <a class="navbar-brand" href=""><img src="" alt=""></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-center" id="bs-example-navbar-collapse-1">
@@ -48,30 +49,30 @@
                         <a href=""></a>
                     </li>
                 </ul>-->
-            </div>
 
-            <div id="busqueda" class="input-group add-on navbar-left">
-                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                <div id="busqueda" class="input-group add-on navbar-left">
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
                 </div>
-            </div>
-            <a id="fancy" href="/"> FANCY </a>
-            <div class="dropdown navbar-right">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a id="fancy" href="/"> FANCY </a>
+                <div class="dropdown navbar-right">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     English
                     <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                </ul>
-            </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    </ul>
+                </div>
 
-            <button id="carro" type="button" class="btn btn-default navbar-right" aria-label="Left Align">
+                <button id="carro" type="button" class="btn btn-default navbar-right" aria-label="Left Align">
                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
             </button>
-            <button type="button" class="btn btn-link navbar-right">Join Fancy</button>
-            <button type="button" class="btn btn-link navbar-right">Login</button>
-            <!-- /.navbar-collapse -->
+                <button type="button" class="btn btn-link navbar-right">Join Fancy</button>
+                <button type="button" class="btn btn-link navbar-right">Login</button>
+                <!-- /.navbar-collapse -->
+            </div>
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -80,13 +81,13 @@
     <main>
         <div class="row">
             <div class="container">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-12 col-xs-12">
 
-                    <div id="trendings" class="panel panel-default">
+                    <div id="trendings">
 
-                        <h3 class="panel-title"><b>Trendings</b></h3>
+                        <h3><b>Trendings</b></h3>
 
-                        <div class="panel-body">
+                        <div>
                             <ul>
                                 <ul class="footer-item">
 
@@ -109,10 +110,10 @@
 
 
 
-                <div class="col-lg-5">
+                <div id="producto" class="col-lg-5 col-md-12 col-xs-12">
 
-                    <div id="producto" class="panel panel-default">
-                        <!--<div class="panel-body">
+                    <!--<div  class="panel panel-default">-->
+                    <!--<div class="panel-body">
                             <img src="">
                         </div>
                         <div class="panel-footer">
@@ -123,11 +124,42 @@
                         </button>
                         </div>-->
 
-                    </div>
+                    <!--</div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <div class="panel-body">
+                                <img class="imagen" src="">
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#myModal" data-toggle="modal" data-target="#myModal">Nombre producto</a>
+                                <button type="button" class="btn btn-info ">Info</button>
+                                <button type="button" class="btn btn-default btn-lg ">
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 5K
+                        </button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <div class="panel-body">
+                                <img class="imagen" src=" ">
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#myModal" data-toggle="modal" data-target="#myModal">Nombre producto</a>
+                                <button type="button" class="btn btn-info ">Info</button>
+                                <button type="button" class="btn btn-default btn-lg ">
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 5K
+                        </button>
+                            </div>
+
+                        </div>
+                    </div>-->
                 </div>
 
 
-                <div class="col-lg-4">
+
+
+                <div class="col-lg-4 col-md-12 col-xs-12">
 
                     <div id="login" class="panel panel-default">
                         <div class="panel-body">

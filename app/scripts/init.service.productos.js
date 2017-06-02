@@ -25,7 +25,7 @@
         return $.ajax({
             type: 'GET',
             dataType: 'json',
-            url: service.root + '?_limit=' + 0
+            url: service.root + '?_limit=' + 2
         });
     }
 
